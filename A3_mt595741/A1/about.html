@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="icon" href="Media/dog icon.png">
+        <link rel="stylesheet" type="text/css" href="Styling/about.css">
+    </head>
+    <body>
+        <header id="top-page">
+            <h1> About </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section id="about">
+                <p>I am currently a student at Dalhousie University pursuing my 
+                    education in Computer Science. I have always been fascinated with Computer Science
+                    due to the fact that there are endless possibilities with what you can you do with a computer.
+                    I also enjoy playing video games, I used to compete in a couple games. 
+                    <!-- Change this to a table -->
+                    <table>
+                        <tr>
+                            <td rowspan="3">Halo Infinite</td>
+                            <td>Top 10 Canada</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Top 100 Worldwide</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Top 32 Competition</td>
+                        </tr>
+                        <tr>
+                            <td>Call of Duty </td>
+                            <td>Top 64 GB's</td>
+                        </tr>
+                        <tr>
+                            <td>SplitGate</td>
+                            <td>Top 128 GB's</td>
+                        </tr>
+                    </table>
+
+                </p>
+
+            
+                <video controls muted>
+                    <source src="Media/Video/Halo-Clip.mkv" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <a href="https://halotracker.com/halo-infinite/profile/xbl/SouIfur/overview?experience=ranked&playlist=edfef3ac-9cbe-4fa2-b949-8f29deafd483"><img src="Media/images/Halo.PNG" alt="Halo Top 100" width="300" height="500"></a>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/=SCAs0xnTFsU&t=95s" frameborder="0" allowfullscreen></iframe>
+                <audio autoplay controls>
+                    <source src="Media/Music/night-in-kyoto-avbe-main-version-21302-01-57 (2).mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </section>
+            <footer>
+                <button id="form" onclick="openForm()">Info</button>
+
+                <div id="form-pop">
+                    <form id="form-popup">
+                        <h1><strong>Contact Info</strong></h1>
+                        <label for="Name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" name="name">
+
+                        <label for="phone"><br>Phone Number</label>
+                        <input type="number" id="phone" placeholder="(###) ###-###" name="name">
+
+                        <label for="Email"><br>Email</label>
+                        <input type="text" id="email" placeholder="Enter Email" name="email">
+
+                        <label for="Org"><br>Organization</label>
+                        <input type="text" id="org" placeholder="Enter Org" name="Organization">
+
+                        <label for="platform"><br>Platform:</label>
+                        <input type="radio" id="platform_pc" name="platform" value="pc">
+                        <label for="platform_pc">PC</label>
+
+                        <input type="radio" id="platform_ps" name="platform" value="ps">
+                        <label for="platform_ps">PS</label>
+
+                        <input type="radio" id="platform_xbox" name="platform" value="xbox">
+                        <label for="platform_xbox">Xbox</label>
+
+                        <input type="radio" id="platform_other" name="platform" value="other">
+                        <label for="platform_other">Other</label>
+
+                        <label for="Description"><br>Where your Organization intends to Go</label>
+                        <input type="textarea" id="description"  placeholder="Enter Description" name="Description">
+
+                        <button type="submit" class="submit" onclick="closeForm()" >Submit</button>
+
+                    </form>
+                </div>
+                <p>Matthieu Landry 2024</p>
+            </footer>
+        </main>
+        <script src="./Script/about.js"></script>
+    </body>
+</html>
